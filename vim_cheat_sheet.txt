@@ -1,0 +1,47 @@
+    === Vim cheat-sheet ===
+
+G -> bottom 
+gg -> top
+} -> next block of code
+{ -> previous code of code
+num + command -> do this for the next {num} of things
+u -> undo
+cltr + R -> redo
+. -> last command
+dd -> delete line
+D -> delte line from curson till the end
+yy -> copy 
+p -> paste v -> visual mode o -> newline and insert mode o -> line above and insert mode
+w/w -> next word/skip punctuation
+b -> previous word
+e -> go to the end of the word
+f + char/F + char -> go to a specific character
+0 -> beginning of line
+^ (= 0 + w) -> first word
+% -> next matching {} or () =>  super useful
+d + % -> delte next matching {} or ()
+c + w -> change word
+d + w -> delte word
+c -> delete line and insert mode 
+c + t + charcter -> change till character
+d + t + character -> delete till character 
+* -> find next instance of phrase
+# -> find previous instance of phrase
+a -> append to the end of the line
+o/O -> insert newline under/above and enter insert-mode
+x -> deletes current character (you can use numbers with this one)
+~ -> swaps the case (lower case <-> upper case)
+zz -> center camera
+[RECORDING MACROS IN VIM]
+        q + character -> start recording a sequence of commands
+        q(again) -> end recording of the sequence
+        @ + character -> replay the sequence in this line and save the macro to character
+$ -> go to the end of the line
+
+[PERFORMING A SEARCH IN VIM]
+    [*] / -> enter pattern to search
+    [*] ENTER to perform the search
+    [*] n -> next or N -> previous
+
+[EDITING MULTIPLE LINES SIMULTENEOYSLY IN VIM]
+Ctrl-v enters visual mode blockwise. You can then move (hjkl-wise, as normal), and if you want to insert something on multiple lines, use Shift-i.

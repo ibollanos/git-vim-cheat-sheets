@@ -1,0 +1,44 @@
+=== Git Notes ===
+
+
+* Creating a git repo :
+     git init
+
+* Staging files:
+     git add <files>
+
+* Removing staged files:
+     git rm --cached <file>
+
+* Making commits:
+     git commit -m "<descriptive message of commit>"
+
+* Seeing previous commits:
+     git log
+
+
+* Seeing previous commits(but show just the changes):
+     git log --oneline
+
+* Undoing( safest to most dangerous):
+    [-]checkout commit  => git checkout <commit-id>
+    [go to a previous commit - it is read only] => git checkout master ( go to the last one ) 
+
+    [-]revert commit => git revert <commit-id> ( adds a new commit which reverts specified commit)
+    [remove a specific commit - it never happpened] 
+    
+    [-]reset commit => git reset <commit-id> (resets to the specified commit, deletes the rest of the commits)
+                    => git reset <commit-id> --hard (resets to the specified commit, does not preserve the old files)
+    [permanently go back to a commit - deletes intermediate commits]
+
+
+* Branches( create an isolated enviroment to experiment on changes of master branch and then merge it)
+    git branch <branch name>: create branch
+    git checkout -b <branch name>: make a new branch and go to it
+    git branch -a: shows all branches
+    git checkout <branch name>: go to the specified branch
+    git branch -d <branch name>: deletes specified branch if it has been merged
+    git branch -D <branch name>: deletes specified branch even if it is not merged
+    git merge <branch name>: merges current branch with specified one
+    
+    
