@@ -40,5 +40,11 @@
     git branch -d <branch name>: deletes specified branch if it has been merged
     git branch -D <branch name>: deletes specified branch even if it is not merged
     git merge <branch name>: merges current branch with specified one
+
+
+* Github
+    git push <report> <branch> : updates destination branch
+    git remote add <alias(origin)> <repo>: you now can use the alias instead of the url
+    git clone <remote repo>
     
     
